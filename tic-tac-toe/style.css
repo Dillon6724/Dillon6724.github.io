@@ -1,0 +1,345 @@
+*{
+	padding: 0px;
+	margin: 0px;
+	color:#5C5C5C;
+	background-color: #F4F4F4;
+}
+
+body{
+	margin-bottom: 15px;
+	margin-left:-38px;
+	font-family: 'Poiret One', cursive;
+	background-color: #F4F4F4;
+	height: 610px;
+}
+
+div {
+	display: inline-block;
+}
+
+.reset {
+	position: absolute;
+	font-size: 60px;
+	border: solid black 1px;
+	width: 300px;
+	height: 100px;
+	padding: 0px;
+	text-align: center;
+	background-color: white;
+	z-index: 10;
+	left:462px ;
+	top: 300px;
+}
+.perm-reset {
+	font-size: 25px
+}
+
+.page{
+	margin-left: 6%;
+} 
+
+.input-one, .input-two {
+	width: 180px;
+    height: 38px;
+    font-size: 20px;
+}
+
+.left, .right, .middle{
+	position: relative;
+	height: 500px;
+}
+
+.left, .right{
+	width: 20%;
+	text-align: center;
+	display: block;
+	font-size: 50px;
+}
+
+p {
+	border-bottom:solid black 1px;
+	font-size: 44px
+}
+
+.wins, .loses, .icons {
+	display: block;
+	height: 27%;
+	font-size: 35px;
+	margin-top: 35px;
+	text-decoration: none;
+	padding: 30px
+}
+.number {
+	position: relative;
+	text-decoration: none;
+}
+
+.middle{
+	width: 60%;
+	padding: 30px;
+}
+
+h1 {
+	text-align: center;
+	font-size: 70px;
+	display: block;
+}
+/*
+.Oconsole, .Xconsole {
+	font-size: 50px
+}
+
+.Xconsole {
+	padding-right: 19%; 
+	padding-left: 31px;
+	opacity: 0;
+}
+
+.Oconsole{
+	opacity: 0;	
+}*/
+
+.playing-field {
+	height: 415px; 
+	width: 432px;
+	margin: 0px auto;
+	position: relative;
+	left: 61px;
+}
+
+.block {
+	height: 138px;
+    width: 138px;
+	margin: -1.5px;
+	position: relative;
+	vertical-align: top;
+	text-align: center;
+	font-size: 113px;
+	border:solid #F4F4F4 2px
+
+}
+
+
+.block:hover{
+	background-color: lightgrey;
+	opacity: .5;
+
+}
+
+.multiplayer {
+	text-align: center;
+	display: block;
+}
+
+span:hover {
+	background-color: lightgrey;
+	color: black;
+}
+
+span{
+	text-align: center;
+	margin: 10px;
+	font-size: 20px;
+}
+
+.on-click {
+	background-color: lightgrey;
+	color: black;
+}
+
+.blink-me {
+	animation-name: blinker;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+.blink-board {
+	animation-name: box-blinker;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-iteration-count: 1;
+}
+
+.blink-board-opening {
+	animation-name: box-blinker;
+    animation-duration: 3s;
+    animation-timing-function: linear;
+    animation-iteration-count: 1;
+}
+
+
+@keyframes blinker {  
+    0% { opacity: 1.0; }
+    50% { opacity: 0.0; }
+    100% { opacity: 1.0; }
+}
+
+
+@keyframes box-blinker {
+	0% {background-color: #F4F4F4;}
+	50% {background-color: lightgrey;}
+	100% {background-color: #F4F4F4;}
+}
+
+
+
+
+@media screen and (max-width: 991px) {
+	
+	body {
+		height: 300px;
+	}
+
+	h1{
+		font-size: 30px
+	}
+
+	.perm-reset, span {
+		font-size: 15px;
+	}
+
+	p {
+		border-bottom:solid black 0px;
+		font-size: 20px
+	}
+
+	.playing-field {
+		border: solid #F4F4F4 3px;
+		margin: -206px auto;
+    	left: 123px;
+    	height: 416px;
+		
+	}
+	.reset {
+		left: 232px;
+   		top: 214px;
+	}
+	.block {
+		height: 138px;
+	    width: 138px;
+		margin: -1.5px;
+		position: relative;
+		vertical-align: top;
+		text-align: center;
+		font-size: 113px;
+		border:solid #F4F4F4 2px;
+	}
+
+	.middle {
+		height: 0px;
+		position:fixed;
+	}
+
+	.left, .right{
+		position: relative;
+		height: 200px;
+		display:block;
+		padding-bottom: 20px
+	}
+
+	.wins, .loses{
+		display: block;
+		height: 27%;
+		font-size: 15px;
+		margin-top: 10px;
+		text-decoration: none;
+		padding: 0px
+	}
+
+	.input-one, .input-two {
+		width: 105px;
+	  	height: 18px;
+	    font-size: 12px;
+}
+}
+
+
+@media screen and (max-width: 690px ) {
+
+	h1{
+		text-align: center;
+
+	}
+
+	body {
+		height: 460px
+	}
+	.block {
+	    height: 96px;
+	    width: 112px;
+	    margin: -1.5px;
+	    position: relative;
+	    vertical-align: top;
+	    text-align: center;
+	    font-size: 66px;
+	    border: solid #F4F4F4 2px;
+	    float: right;
+	}
+
+	.middle {
+	    height: 0px;
+	    position: fixed;
+	}
+
+	.left, .right {
+		display: block;
+	}
+
+	.playing-field {
+	    height: 289px;
+	    width: 346px;
+	    position: fixed;
+	    left: 141px;
+	    top: 295px;
+	}
+}
+
+
+@media screen and (max-width: 490px) {
+	h1{
+		display: inline-block;
+		text-align: center;
+		margin-left: 10px;
+	}
+
+	.reset {
+		width: 213px;
+    	height: 69px;
+    	font-size: 45px;
+	}
+
+	body {
+		height: 460px
+	}
+	.block {
+	    height: 97px;
+	    width: 97px;
+	    margin: -1.5px;
+	    position: relative;
+	    vertical-align: top;
+	    text-align: center;
+	    font-size: 66px;
+	    border: solid #F4F4F4 2px;
+	    float: right;
+	}
+
+	.middle {
+	    height: 0px;
+	    position: fixed;
+	}
+
+	.left, .right {
+		display: block;
+	}
+
+	.playing-field {
+	    height: 289px;
+	    width: 289px;
+	    position: fixed;
+	    left: 141px;
+	    top: 295px;
+	}
+}
+
+}

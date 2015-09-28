@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link href='https://fonts.googleapis.com/css?family=Poiret+One' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="style.css" charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+	<title>Document</title>
+</head>
+<body>
+	<div class="page container">
+		<!-- <h1 class="Xconsole">Xs Turn</h1> --><h1 class="title">Tic Tac Toe</h1><!-- <h1 class="Oconsole">Os Turn</h1> -->
+		
+		<div class="multiplayer"><span class="perm-reset">Reset</span><span class="oneplayer">1-Player</span><span class="twoplayer">2-Player</span></div>
+		<div class="left col-md-4">
+			<input class="input-one" placeholder="Enter Player-1 Name"></input>
+			<p class="player-1"></p>
+			<div class="wins">Wins: 
+				<div class="one-wins">0</div>
+			</div>
+			<div class="loses">Losses:
+				<div class="one-looses">0</div>
+			</div>
+		</div>
+
+		<div class="middle col-md-4">
+			<div class="playing-field">
+				<div class="block position-1a"></div>
+				<div class="block position-1b"></div>
+				<div class="block position-1c"></div>
+				<div class="block position-2a"></div>
+				<div class="block position-2b"></div>
+				<div class="block position-2c"></div>	
+				<div class="block position-3a"></div>
+				<div class="block position-3b"></div>
+				<div class="block position-3c"></div>				
+			</div>	
+		</div>
+		<div class="right col-md-4">
+			<p class="player-2">Computer</p>
+			<div class="wins">Wins:
+				<div class="two-wins">0</div>
+			</div>
+			<div class="loses">Losses:
+				<div class="two-looses">0</div>
+			</div>
+		</div>
+	</div>
+	<script src="app.js"></script>
+</body>
+</html>
